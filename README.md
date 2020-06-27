@@ -22,17 +22,17 @@ Both .py and .ipynb files are added
 >numpy
 
 >matplotlib
->	pyplot
+>	-pyplot
 
 >sklearn
->	impute
->	compose
->	preprocessing
->	model_selection
->	linear_model
->	svm
->	tree
->	ensemble
+>	-impute
+>	-compose
+>	-preprocessing
+>	-model_selection
+>	-linear_model
+>	-svm
+>	-tree
+>	-ensemble
 
 ##### Classes
 
@@ -43,63 +43,62 @@ Both .py and .ipynb files are added
 >matplotlib
 
 >sklearn
->	impute
->		SimpleImputer(missing_values, strategy)
->	compose
->		ColumnTransformer(transformers = [(transform_type, encoder_used, column_index)], remainder)
->	preprocessing
->		LabelEncoder()
->		OneHotEncoder()
->		StandardScalar()
->		PolynomialFeatures(degree)
->	linear_model
->		LinearRegression()
->	svm
->		SVR(kernel)
->	tree
->		DecisionTreeRegressor(random_state)
->	ensemble
->		RandomForestRegressor(n_estimators, random_state)
+>	-impute
+>		-SimpleImputer(missing_values, strategy)
+>	-compose
+>		-ColumnTransformer(transformers = [(transform_type, encoder_used, column_index)], remainder)
+>	-preprocessing
+>		-LabelEncoder()
+>		-OneHotEncoder()
+>		-StandardScalar()
+>		-PolynomialFeatures(degree)
+>	-linear_model
+>		-LinearRegression()
+>	-svm
+>		-SVR(kernel)
+>	-tree
+>		-DecisionTreeRegressor(random_state)
+>	-ensemble
+>		-RandomForestRegressor(n_estimators, random_state)
 
 ##### Functions / Methods
 
 >pandas
->	read_csv('file.csv')				# Gets data from a csv file
->	iloc[rows, :columns]				# Get index locations of given rows and columns
->	values 								# Get values for given index
+>	-read_csv('file.csv')
+>	-iloc[rows, :columns]
+>	-values
 
 >numpy
->	array()								# Converts data into a numpy array
->	datatype 							# Returns all of that variable type(eg. numpy.nan returns all nan datatypes)
->	set_printoptions(precision) 		# Sets a limit to decimal values
->	reshape(row, column)				# To reshape a matrix
->	concatenate((array_1, ..., array_n), axis)
->	arange(min(x), max(x), 0.1)			# Arrange integers as floats with 0.1 difference
+>	-array()
+>	-set_printoptions(precision)
+>	-reshape(row, column)
+>	-concatenate((array_1, ..., array_n), axis)
+>	-arange(min(x), max(x), 0.1)
 
 >matplotlib
->	pyplot
->		scatter(x, y, color)
->		plot(x, y, color)
->		title('')
->		xlabel('')
->		ylabel('')
->		show()
+>	-pyplot
+>		-scatter(x, y, color)
+>		-plot(x, y, color)
+>		-title('')
+>		-xlabel('')
+>		-ylabel('')
+>		-show()
 
 >sklearn
->	impute
->		SimpleImputer(missing_values, strategy)
->			fit(array)
->			transform(array)
->	All Types
->		fit
->		transform
->		inverse_transform
->		fit_transform
->	model_selection
->		train_test_split(x, y, test_size, random_state)
->	linear_model
->		LinearRegression
->			fit(x, y)
->			predict(x)					# x is a 2d array
->			coef						# Returns all coefficients
->			intercept 					# Returns the intercept
+>	-impute
+>		-SimpleImputer(missing_values, strategy)
+>			-fit(array)
+>			-transform(array)
+>	-All Types
+>		-fit
+>		-transform
+>		-inverse_transform
+>		-fit_transform
+>	-model_selection
+>		-train_test_split(x, y, test_size, random_state)
+>	-linear_model
+>		-LinearRegression
+>			-fit(x, y)
+>			-predict(x)
+>			-coef
+>			-intercept
