@@ -80,7 +80,8 @@ plt.show()
 
 '''
 Making a single prediction
-(for example the profit of a startup with R&D Spend = 160000, Administration Spend = 130000, Marketing Spend = 300000 and State = 'California')
+Making a single prediction
+(for example salary for employee with an experience of 12 years)
 '''
 
 print('\nThe salary for employee with an experience of 12 years is')
