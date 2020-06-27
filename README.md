@@ -2,18 +2,25 @@
 
 **This repo contains all models that I wrote during learning Data Science - Machine Learning**
 
+> I am making these files for my learning purpose so some things may get repeated as I reach advance level for those topics.
+
 *These are just basic format of making these models and nothing new*
 
 Both .py and .ipynb files are added
 
-***
+> *In case of any confusion on using libraries, check their documentations:*
+> - [***pandas***](https://pandas.pydata.org/docs/reference/index.html)
+> - [***numpy***](https://numpy.org/doc/)
+> - [***matplotlib***](https://matplotlib.org/contents.html)
+> - [***scikit learn***](https://scikit-learn.org/stable/modules/classes.html)
+
 
 ### Information on Libraries used
 
-> - **pandas** 				It provides fast, expressive, and flexible data structures to easily work with structured and time-series data.
-> - **numpy** 				It has advanced math functions and a rudimentary scientific computing package.
-> - **matplotlib** 			Matplotlib helps with data analyzing, and is a numerical plotting library.
-> - **sklearn** 			Scikit-learn provides a range of supervised and unsupervised learning algorithms via a consistent interface
+> - **pandas** 		: It provides fast, expressive, and flexible data structures to easily work with structured and time-series data.
+> - **numpy** 		: It has advanced math functions and a rudimentary scientific computing package.
+> - **matplotlib** 	: Matplotlib helps with data analyzing, and is a numerical plotting library.
+> - **sklearn** 	: Scikit-learn provides a range of supervised and unsupervised learning algorithms via a consistent interface
 
 ##### Modules
 
