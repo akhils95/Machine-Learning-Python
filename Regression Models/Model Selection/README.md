@@ -21,10 +21,9 @@ The data is from the [**UCI Machine Learning Repository**](https://archive.ics.u
 
 On running the last code for evaluating the r-squared values
 
-`
-from sklearn.metrics import r2_score
-r2_score(y_test, y_pred)
-`
+`from sklearn.metrics import r2_score`
+`r2_score(y_test, y_pred)`
+
 
 We get the following result:
 
