@@ -30,6 +30,7 @@ Both .py and .ipynb files are added
 
 >matplotlib
 >	- pyplot
+>	- colors
 
 >sklearn
 >	- impute
@@ -40,6 +41,7 @@ Both .py and .ipynb files are added
 >	- svm
 >	- tree
 >	- ensemble
+>	- metrics
 
 ##### Classes
 
@@ -48,6 +50,8 @@ Both .py and .ipynb files are added
 >numpy
 
 >matplotlib
+>	- colors
+>		- ListedColormap
 
 >sklearn
 >	- impute
@@ -61,6 +65,7 @@ Both .py and .ipynb files are added
 >		- PolynomialFeatures(degree)
 >	- linear_model
 >		- LinearRegression()
+>		- LogisticRegression()
 >	- svm
 >		- SVR(kernel)
 >	- tree
@@ -71,41 +76,48 @@ Both .py and .ipynb files are added
 ##### Functions / Methods
 
 >pandas
->	- read_csv('file.csv')
->	- iloc[rows, :columns]
->	- values
+>			- read_csv('file.csv')
+>			- iloc[rows, :columns]
+>			- values
 
 >numpy
->	- array()
->	- set_printoptions(precision)
->	- reshape(row, column)
->	- concatenate((array_1, ..., array_n), axis)
->	- arange(min(x), max(x), 0.1)
+>			- array()
+>			- set_printoptions(precision)
+>			- reshape(row, column)
+>			- concatenate((array_1, ..., array_n), axis)
+>			- arange(min(x), max(x), 0.1)
 
 >matplotlib
 >	- pyplot
->		- scatter(x, y, color)
->		- plot(x, y, color)
->		- title('')
->		- xlabel('')
->		- ylabel('')
->		- show()
+>			- scatter(x, y, color)
+>			- plot(x, y, color)
+>			- title('')
+>			- xlabel('')
+>			- ylabel('')
+>			- show()
+>			- legend()
+>			- xlim()
+>			- ylim()
+>			- contourf()
 
 >sklearn
 >	- impute
 >		- SimpleImputer(missing_values, strategy)
 >			- fit(array)
 >			- transform(array)
->	- All Types
->		- fit
->		- transform
->		- inverse_transform
->		- fit_transform
+>	- *All Types*
+>			- fit
+>			- transform
+>			- inverse_transform
+>			- fit_transform
 >	- model_selection
->		- train_test_split(x, y, test_size, random_state)
+>			- train_test_split(x, y, test_size, random_state)
 >	- linear_model
 >		- LinearRegression
 >			- fit(x, y)
 >			- predict(x)
 >			- coef
 >			- intercept
+>	- metrics
+>			- confusion_matrix
+>			- accuracy_score
