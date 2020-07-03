@@ -42,6 +42,7 @@ Both .py and .ipynb files are added
 >	- tree
 >	- ensemble
 >	- metrics
+>	- neighbors
 
 ##### Classes
 
@@ -72,6 +73,8 @@ Both .py and .ipynb files are added
 >		- DecisionTreeRegressor(random_state)
 >	- ensemble
 >		- RandomForestRegressor(n_estimators, random_state)
+>	- neighbors
+>		- KNeighborsClassifier(n_neighbors, metric, p)
 
 ##### Functions / Methods
 
