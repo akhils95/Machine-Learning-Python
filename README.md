@@ -76,11 +76,15 @@ Both .py and .ipynb files are added
 ##### Functions / Methods
 
 >pandas
+>	- 
+>		- 
 >			- read_csv('file.csv')
 >			- iloc[rows, :columns]
 >			- values
 
 >numpy
+>	- 
+>		- 
 >			- array()
 >			- set_printoptions(precision)
 >			- reshape(row, column)
@@ -89,6 +93,7 @@ Both .py and .ipynb files are added
 
 >matplotlib
 >	- pyplot
+>		- 
 >			- scatter(x, y, color)
 >			- plot(x, y, color)
 >			- title('')
@@ -106,11 +111,13 @@ Both .py and .ipynb files are added
 >			- fit(array)
 >			- transform(array)
 >	- *All Types*
+>		- 
 >			- fit
 >			- transform
 >			- inverse_transform
 >			- fit_transform
 >	- model_selection
+>		- 
 >			- train_test_split(x, y, test_size, random_state)
 >	- linear_model
 >		- LinearRegression
@@ -119,5 +126,6 @@ Both .py and .ipynb files are added
 >			- coef
 >			- intercept
 >	- metrics
+>		- 
 >			- confusion_matrix
 >			- accuracy_score
