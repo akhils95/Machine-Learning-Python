@@ -1,4 +1,4 @@
-# Machine-Learning-Python
+# Machine Learning Python
 
 **This repo contains all models that I wrote during learning Data Science - Machine Learning**
 
@@ -69,6 +69,7 @@ Both .py and .ipynb files are added
 >		- LogisticRegression()
 >	- svm
 >		- SVR(kernel)
+>		- SVC(kernel)
 >	- tree
 >		- DecisionTreeRegressor(random_state)
 >	- ensemble

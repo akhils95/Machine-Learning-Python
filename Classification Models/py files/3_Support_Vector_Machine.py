@@ -1,4 +1,4 @@
-# K-Nearest Neighbors (K-NN)
+# Suport Vector Machine (SVM)
 
 # Importing the libraries
 
@@ -24,10 +24,10 @@ sc = StandardScaler()
 x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 
-# Training the K-NN model on the Training set
+# Training the SVM model on the Training set
 
-from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
+from sklearn.svm import SVC
+classifier = SVC(kernel = 'linear', random_state = 0) # LinearSVM class could have been used directly
 classifier.fit(x_train, y_train)
 
 # Predicting a new result
