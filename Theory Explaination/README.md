@@ -54,7 +54,7 @@ Standardization can be done to any data and makes all values between -3 and 3.
 A simple linear regression will predict a straight line following the equation : **y = b0 + b1 * x**  
 From all the possible regression lines the best line is choosen by seeing that the sum of squares of distances of all vector points from the line is minimum. This method is called *Ordinary Least Squares.*
 
-[SLR](images/Linear-regression.png)
+![SLR](images/Linear-regression.png)
 
 #### Multiple Linear Regression
 
@@ -67,13 +67,13 @@ A 2D graph cannot be plotted for so many variables
 Polynomial Regression follows a curve and find the best fitting curve using the same concept as other regression models.  
 It will follow the equation: **y = b0 + b1 * x + b2 * x^2 + ... + bn * x^n**
 
-[PR](images/Polynomial-regression.png)
+![PR](images/Polynomial-regression.png)
 
 #### Support Vector Regression
 
 In this type of regression the Ordinary Least Square method is applied after providing a little slack, slack bring a tube around the line to neglect errors.
 
-[SVR](images/Support-vector-regression.png)
+![SVR](images/Support-vector-regression.png)
 
 #### Decision Tree Regression
 
@@ -85,7 +85,7 @@ Each leaf is decided by two factors:
 This process is called *Information Entropy* and the final leaves that we get are called *Terminal Leaves*.  
 The predicted y value will be the average of all y values for the leaf our variables fall on.
 
-[DTR](images/Decision-tree-Regression.png)
+![DTR](images/Decision-tree-Regression.png)
 
 #### Random Forest Regression
 
@@ -93,7 +93,7 @@ Random Forest Regression uses combining or repeating algorithms to get a result.
 Tree regression is run on random data vectors multiple times and the result from all of them is averaged to get a final prediction.  
 That is probably why there is a forest in the name. 😉
 
-[RFR](images/Decision-tree-Regression.png)
+![RFR](images/Random-Forest-Regression.png)
 
 ---
 
