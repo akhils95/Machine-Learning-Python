@@ -34,7 +34,7 @@ We have two ways of doing feature scaling -
 * Standardization  
 * Normalization
 
-![Standardization and normalization formula(images/Standard-Normal.jpg)]
+![Standardization and normalization formula](images/Standard-Normal.jpg)
 
 ### Regression Models
 
