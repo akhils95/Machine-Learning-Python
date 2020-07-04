@@ -36,6 +36,13 @@ We have two ways of doing feature scaling -
 
 ![Standardization and normalization formula](images/Standard-Normal.jpg)
 
+Here-  
+μ is mean  
+σ is Standard Deviation
+
+Normalization can only be done to a data that follows a normal curve and makes all values between 0 and 1.  
+Standardization can be done to any data and makes all values between -3 and 3.
+
 ### Regression Models
 
 
