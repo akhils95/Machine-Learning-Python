@@ -1,4 +1,4 @@
-# Theory knowledge necesarry for Data Science.
+# Theory knowledge necesarry for Data Science
 
 This is a markdown file containing information about all models that we have built and also some small mathematical processess that may have happened in between.
 
@@ -42,6 +42,8 @@ Here-
 
 Normalization can only be done to a data that follows a normal curve and makes all values between 0 and 1.  
 Standardization can be done to any data and makes all values between -3 and 3.
+
+[Go to top](#theory-knowledge-necesarry-for-data-science)
 
 ---
 
@@ -95,6 +97,8 @@ That is probably why there is a forest in the name. 😉
 
 ![RFR](images/Random-Forest-Regression.png)
 
+[Go to top](#theory-knowledge-necesarry-for-data-science)
+
 ---
 
 ### Classification Models
@@ -111,4 +115,8 @@ We can take following approaches to build a kernel SVM:
 
 ![2D to 3D to 2D](images/2Dto3Dto2D.jpg)
 
-   However, this method is not generally used as it require a very high processor to do all those tasks. We generall use the next given approach.
+   However, this method is not generally used as it require a very high processor to do all those tasks. We generally use the next given approach.
+
+[Go to top](#theory-knowledge-necesarry-for-data-science)
+
+---
