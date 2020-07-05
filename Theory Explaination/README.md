@@ -43,6 +43,12 @@ Here-
 Normalization can only be done to a data that follows a normal curve and makes all values between 0 and 1.  
 Standardization can be done to any data and makes all values between -3 and 3.
 
+###### Progress List
+
+- [x] ~Data Preprocessing~
+- [ ] Regression Models
+- [ ] Classification Models
+
 [Go to top](#theory-knowledge-necesarry-for-data-science)
 
 ---
@@ -97,13 +103,50 @@ That is probably why there is a forest in the name. 😉
 
 ![RFR](images/Random-Forest-Regression.png)
 
+###### Progress List
+
+- [x] ~Data Preprocessing~
+- [x] ~Regression Models~
+- [ ] Classification Models
+
 [Go to top](#theory-knowledge-necesarry-for-data-science)
 
 ---
 
 ### Classification Models
 
+**Jump to a Model :** [Logistic Regression](#logistic-regression), [K Nearest Neighbor](#k-nearest-neighbor), [Support Vector Machine](#support-vector-machine), [Kernel SVM](#kernel-svm), [Naive Bayes](#naive-bayes), [Decision Tree Classification](#decision-tree-classification), [Random Forest Classification](#random-forest-classification)
+
+#### Logistic Regression
+
+Imagine a linear regression line for points showing probability of some thing depending on some variables.  
+Example : For 1 variable **y = b0 + b1 * x**  
+We take a sigmoid function **p = 1 / (1 + e^-y)**  
+Substitute the value of y to get final equation: **ln(p / (1 - p)) = b0 + b1 * x**  
+Thats how our straight line is converted to the curve seen in the image and this is the equation for Logistic Regression.  
+This model can return the probability of classification or just 0 or 1 depending on which side is the probability vector closest to.
+
+![Logistic Regression](images/Logistic-Regression.png)
+
+#### K Nearest Neighbor
+
+As shown in the image, the model will predict which category a new datavector will be classified in.  
+The distance for k number of the nearest neighbors are choosen. Then, there distance from the new datavector is calculated preferably using **Euclidean Distance : ((y2 - y1)^2 + (x2 - x1)^2)^(1/2)**.  
+Then the number of datavectors in each category are counted and new vector is classified as the category with most k neighbors.  
+
+![K Nearest Neighbor](images/K-NN.jpg)
+
+#### Support Vector Machine
+
+As in Support Vector Regression, there is a tube around seperator which passes through the closest points to seperation such that the margin is maximum as shown in the image below. Also, both support vectors will be equi-distant from the line.
+
+![Support Vector Machine](images/SVM.jpg)
+
 #### Kernel SVM
+
+Sometimes, we have data that is non lineary seperable as shown below. For such data we use Kernel SVM.
+
+![Non Linearly Seperable](images/Non-Linearly-Seperable.jpg)
 
 We can take following approaches to build a kernel SVM:  
 * **Mapping to a Higher Dimension**  
@@ -116,6 +159,28 @@ We can take following approaches to build a kernel SVM:
 ![2D to 3D to 2D](images/2Dto3Dto2D.jpg)
 
    However, this method is not generally used as it require a very high processor to do all those tasks. We generally use the next given approach.
+
+* **Kernel Trick**
+
+![Kernel Trick](images/Kernel-Trick.png)
+
+#### Naive Bayes
+
+
+
+#### Decision Tree Classification
+
+
+
+#### Random Forest Classification
+
+
+
+###### Progress List
+
+- [x] ~Data Preprocessing~
+- [x] ~Regression Models~
+- [x] ~Classification Models~
 
 [Go to top](#theory-knowledge-necesarry-for-data-science)
 
