@@ -186,7 +186,42 @@ These are the main kernels that we use, although there are other types also.
 
 #### Naive Bayes
 
+###### Bayes Theorem
 
+Bayes' theorem is a formula that describes how to update the probabilities of hypotheses when given evidence. It follows simply from the axioms of **conditional probability**, but can be used to powerfully reason about a wide range of problems involving belief updates.
+
+![Bayes Theorem](images/Bayes-Theorem.jpg)
+
+Lets try and understand it using an example:
+
+>Imagine there two be two machines, manufacturing a same identical item. Both machines manufacture at different rates and some of the manufactured items are defected. We have the following information:  
+> - Machine 1 manufactures 30 items / hour.
+> - Machine 2 manufactures 20 items / hour.
+> - Out of all manufactured items 1% are defective.
+> - Out of all manufactured items 50% came from machine 1 and rest 50% came from machine 2.
+>
+> **Question:** What is the probability that a item manufactured by machine 2 is defected?
+>
+> Lets write the given information in mathematical terms:
+>
+> *Probability of an item picked up at random being manufactured by machine 2*  
+> **P(M2)** = 20/50 = 0.4
+>
+> *Probability of an item picked up at random being defective*  
+> **P(Defect)** = 1% = 0.01
+>
+> *Probability of an item picked up at random being manufactured by machine 2 **given** that it is defected*  
+> **P(M2|Defect)** = 50% = 0.5
+>
+> **Answer:** *We have to find the probability of an item picked up at random being defective **given** the item is manufactured by machine 2*  
+> According to Bayes theorem: **P(Defect|M2) = (P(M2|Defect) * P(Defect)) / P(M2)**  
+> P(Defect|M2) = 0.0125 = 1.25%
+>
+> *Lets test the theorem by taking an example of 1000 items:*  
+> *We know machine 2 produces 40% so i.e. 400 items.*  
+> *1% of the items are defected i.e. 10 items.*  
+> *50% of the defected are from machine 2 i.e. 5 items.*  
+> *=> Percentage of defected from machine 2 = 5/400 = 0.0125*
 
 #### Decision Tree Classification
 
