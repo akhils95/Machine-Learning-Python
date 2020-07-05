@@ -177,9 +177,9 @@ We can take following approaches to build a kernel SVM:
     This method dosen't actually map the data into a higher dimension. It just uses the function to calculate the position of the seperator. Thus, it dose not require as much of comutational processing.
 
 > **Types of Kernel Functions**
->
-> ![Types of kernel functions](images/Kernel-types.jpg)
->
+
+![Types of kernel functions](images/Kernel-types.jpg)
+
 > These are the main kernels that we use, although there are other types also.  
 > [Here](https://towardsdatascience.com/kernel-function-6f1d2be6091) is an article explaining kernels that you can read.  
 > [Here](https://data-flair.training/blogs/svm-kernel-functions/#:~:text=The%20function%20of%20kernel%20is,(RBF)%2C%20and%20sigmoid.) is an article explaining all types of kernels.
