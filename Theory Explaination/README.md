@@ -152,17 +152,35 @@ We can take following approaches to build a kernel SVM:
 * **Mapping to a Higher Dimension**  
    Basically when we map our data to a higher dimension we ussualy get a seperator. Thus, we convert the non liarly seperable data to lineraly seperable data by mapping to a higher dimension.
 
-![1D to 2D](images/1Dto2D.jpg)
+   ![1D to 2D](images/1Dto2D.jpg)
 
    When our data is non linearly seperable, mapping it to a higher dimension can help make it linearly seperable. So we convert our data from 2D to 3D then find the seprator hyperplane and then map it back to 2D to get our non linear seperator.
 
-![2D to 3D to 2D](images/2Dto3Dto2D.jpg)
+   ![2D to 3D to 2D](images/2Dto3Dto2D.jpg)
 
    However, this method is not generally used as it require a very high processor to do all those tasks. We generally use the next given approach.
 
 * **Kernel Trick**
+  * **The Gaussian or RBF Kernel**  
+    Gaussian and Radial Basis Function are interchangable terms and follows the following equation.
 
-![Kernel Trick](images/Kernel-Trick.png)
+    ![Gaussian Kernel](images/RBF.jpg)
+
+    The landmark vector is the point (0,0) in the 3D representation and then there is x vector. As seen in the formula the Kernel function is inversly propotional to the distance of x and landmark vectors. So, for a huge distance K will be closer to 0 and as the distance keeps increasing K will come closer to 1. That is the 3D representation shown in the next image.
+
+    ![RBF Structure](images/RBF-Structure.jpg)
+
+    The sigma in the formula decides the circumfrence of the seperator. Any point within the seperator is on the 3D part (aqquiring value between 0 & 1) and any point outside it are on horizontal plain (aquiring value 0).
+
+    ![RBF Procedure](images/RBF-Procedure.jpg)
+
+    This method dosen't actually map the data into a higher dimension. It just uses the function to calculate the position of the seperator. Thus, it dose not require as much of comutational processing.
+
+> **Types of Kernel Functions**
+> ![Types of kernel functions](images/Kernel-types.jpg)
+> These are the main kernels that we use, although there are other types also.
+> [Here](https://towardsdatascience.com/kernel-function-6f1d2be6091) is an article explaining kernels that you can read.
+> [Here](https://data-flair.training/blogs/svm-kernel-functions/#:~:text=The%20function%20of%20kernel%20is,(RBF)%2C%20and%20sigmoid.) is an article explaining all types of kernels.
 
 #### Naive Bayes
 
