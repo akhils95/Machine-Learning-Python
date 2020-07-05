@@ -176,7 +176,7 @@ We can take following approaches to build a kernel SVM:
 
     This method dosen't actually map the data into a higher dimension. It just uses the function to calculate the position of the seperator. Thus, it dose not require as much of comutational processing.
 
-> **Types of Kernel Functions**
+**Types of Kernel Functions**
 
 ![Types of kernel functions](images/Kernel-types.jpg)
 
