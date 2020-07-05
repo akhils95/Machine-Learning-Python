@@ -178,7 +178,7 @@ We can take following approaches to build a kernel SVM:
 
 **Types of Kernel Functions**
 
-![Types of kernel function](images/Kernel-Types.jpg)
+![Types of kernel function](https://raw.githubusercontent.com/akhils95/Machine-Learning-Python/master/Theory%20Explaination/images/Kernel-types.JPG)
 
 These are the main kernels that we use, although there are other types also.  
 [Here](https://towardsdatascience.com/kernel-function-6f1d2be6091) is an article explaining kernels that you can read.  
