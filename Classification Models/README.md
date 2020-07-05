@@ -5,7 +5,7 @@
 | Logistic Regression          | 89%          |
 | K Nearest Neighbor           | 93%          |
 | Support Vector Machine       | 90%          |
-| Kernel SVM                   |              |
+| Kernel SVM                   | 93%          |
 | Naive Bayes                  |              |
 | Decision Tree Classification |              |
 | Random Forest Classification |              |
