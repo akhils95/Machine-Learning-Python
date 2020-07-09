@@ -252,7 +252,7 @@ Naive Bayes classification uses this theorem to calculate the probablility of a 
 
 As we learnt in the regression part, decision tree is a part of **CART** - Classification And Regression Tree. But this model insted of predicting will classify. The model will makes split into the data plot calles leafs. The splits are made so that each leaf has maximum of a category.A more non basic task that algorithm does in background is check for minimizing information entropy.
 
-![Decision Tree Classification](images/Decision_Tree_Classification.JPG)
+![Decision Tree Classification](https://github.com/akhils95/Machine-Learning-Python/blob/master/Theory%20Explaination/images/Decision_Tree_Classification.jpg)
 
 #### Random Forest Classification
 
@@ -291,7 +291,7 @@ Although this is not the preffered way of calculating the Accuracy rate due to A
 
 Assume you have a customer list and you know that on inviting them for some offer, only 10% accept the invitation. So we plot that straight line on a graph for invitation sent at random. Now we can use a model's predicted values to plot a curve for when people with high probability of accepting are invited first. It will be noticed that we reach almost maximum invitation acceptance before we can send invitations to everyone. This is our CAP curve for that model.
 
-![CAP Curve](images/CAP_Curve.jpg)
+![CAP Curve](https://github.com/akhils95/Machine-Learning-Python/blob/master/Theory%20Explaination/images/CAP_Curve.JPG)
 
 More the area between line and curve, better is that model.
 
@@ -303,7 +303,7 @@ The Accuracy Rate for any model can be calculated by dividing the area for model
 
 Although it is very hard to do statistically, so ve can just reflect x = 50% on y axis for our curve to get X and use followin values as refrence:
 
-![CAP Analysis 1](images/CAP_AR_2.jpg)
+![CAP Analysis 1](https://github.com/akhils95/Machine-Learning-Python/blob/master/Theory%20Explaination/images/CAP_AR_2.JPG)
 
 > If:
 > - **X < 60%** Model is very bad, improve it.
