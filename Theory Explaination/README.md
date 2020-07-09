@@ -252,7 +252,7 @@ Naive Bayes classification uses this theorem to calculate the probablility of a 
 
 As we learnt in the regression part, decision tree is a part of **CART** - Classification And Regression Tree. But this model insted of predicting will classify. The model will makes split into the data plot calles leafs. The splits are made so that each leaf has maximum of a category.A more non basic task that algorithm does in background is check for minimizing information entropy.
 
-![Decision Tree Classification]('images/Decision_Tree_Classification.JPG')
+![Decision Tree Classification](images/Decision_Tree_Classification.JPG)
 
 #### Random Forest Classification
 
