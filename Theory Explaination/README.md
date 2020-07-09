@@ -303,7 +303,7 @@ The Accuracy Rate for any model can be calculated by dividing the area for model
 
 Although it is very hard to do statistically, so ve can just reflect x = 50% on y axis for our curve to get X and use followin values as refrence:
 
-![CAP Analysis 1](https://github.com/akhils95/Machine-Learning-Python/blob/master/Theory%20Explaination/images/CAP_AR_2.JPG)
+![CAP Analysis 1](images/CAP_AR_2.JPG)
 
 > If:
 > - **X < 60%** Model is very bad, improve it.
