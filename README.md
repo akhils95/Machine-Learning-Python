@@ -43,6 +43,7 @@ Both .py and .ipynb files are added
 >	- ensemble
 >	- metrics
 >	- neighbors
+>	- naive_bayes
 
 ##### Classes
 
@@ -72,10 +73,14 @@ Both .py and .ipynb files are added
 >		- SVC(kernel)
 >	- tree
 >		- DecisionTreeRegressor(random_state)
+>		- DecisionTreeClassifier(criterion, random_state)
 >	- ensemble
 >		- RandomForestRegressor(n_estimators, random_state)
+>		- RandomForestClassifier(n_estimators, criterian, random_state)
 >	- neighbors
 >		- KNeighborsClassifier(n_neighbors, metric, p)
+>	- naive_bayes
+>		- GaussianNB()
 
 ##### Functions / Methods
 

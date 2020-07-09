@@ -101,7 +101,30 @@ Random Forest Regression uses combining or repeating algorithms to get a result.
 Tree regression is run on random data vectors multiple times and the result from all of them is averaged to get a final prediction.  
 That is probably why there is a forest in the name. 😉
 
+> Steps Involved
+>
+> **STEP 1:** Pick at random k datapoints.
+> **STEP 2:** Build the Decision Tree associated to these points.
+> **STEP 3:** Choose the number Ntree of trees, you want to build and repeat Step 1 & 2.
+> **STEP 4:** New predicted value will be the average value predicted for each leaf..
+
 ![RFR](images/Random-Forest-Regression.png)
+
+###### Model Selection
+
+We have already talked about *Ordinary Least Squares*. OLS gives us the sum of square of residuals(SSres) and then, we calculate the R-Squared value for that regression line by the following formula:
+
+![R Squared](images/R_Squared.png)
+
+For the smallest SSres, R-Squared will be closest to 1, which will be the best model to choose. Although, R-Squared values have a limitation; When the number of independent variables increase, the R-Squared value will keep on increasing a bit even if the independent variable has no correlation with the dependent variable. So, for better evaluation we use Adjusted R-Squared
+
+![Adjusted R Squared](images/Adj_R_Squared.png)
+
+Here,  
+p -> No. of Regressors / Independent Variables
+N -> Sample Size
+
+Here the increase in value of R-Squared due to increase in no. of variables is countered by the p in denominator.
 
 ###### Progress List
 
@@ -166,7 +189,7 @@ We can take following approaches to build a kernel SVM:
 
     ![Gaussian Kernel](images/RBF.jpg)
 
-    The landmark vector is the point (0,0) in the 3D representation and then there is x vector. As seen in the formula the Kernel function is inversly propotional to the distance of x and landmark vectors. So, for a huge distance K will be closer to 0 and as the distance keeps increasing K will come closer to 1. That is the 3D representation shown in the next image.
+    The landmark vector is the point (0,0) in the 3D representation and then there is x vector. As seen in the formula the Kernel function is inversly propotional to the distance of x and landmark vectors. So, for a huge distance K will be closer to 0 and as the distance keeps decreasing, K will come closer to 1. That is the 3D representation shown in the next image.
 
     ![RBF Structure](images/RBF-Structure.jpg)
 
@@ -223,13 +246,71 @@ Lets try and understand it using an example:
 > *50% of the defected are from machine 2 i.e. 5 items.*  
 > *=> Percentage of defected from machine 2 = 5/400 = 0.0125*
 
+Naive Bayes classification uses this theorem to calculate the probablility of a classification given some features X, then those probabilities are compared for a final Prediction.
+
 #### Decision Tree Classification
 
+As we learnt in the regression part, decision tree is a part of **CART** - Classification And Regression Tree. But this model insted of predicting will classify. The model will makes split into the data plot calles leafs. The splits are made so that each leaf has maximum of a category.A more non basic task that algorithm does in background is check for minimizing information entropy.
 
+![Decision Tree Classification]('images/Decision_Tree_Classification.jpg')
 
 #### Random Forest Classification
 
+As mentioned earlier Random forest uses **Ensemble Learning**. Ensemble Learning means to use multiple algorithms on a single dataset to get a result using the collective information. Random Forest actually runs the **Decision Tree** several times to get its result.
 
+> Steps Involved
+>
+> **STEP 1:** Pick at random k datapoints.
+> **STEP 2:** Build the Decision Tree associated to these points.
+> **STEP 3:** Choose the number Ntree of trees, you want to build and repeat Step 1 & 2.
+> **STEP 4:** New category assigned will be the major category assigned by all trees.
+
+* ***Fun Fact***
+**Microsoft connect**, a device that you plug to your XBox to use your body movements as the controler uses Random Forest algorithm.  
+You can read more about it [here](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/BodyPartRecognition.pdf).
+
+##### Evaluating the performance for Classification Models
+
+###### 1. False Positives and False Negatives
+
+When our prediction model for a test value predicts true or 1 but our real test value for y is false or 0, it is called a false positive. Similarily, when our prediction model for a test value predicts false or 0 but our real test value for y is true or 1, it is called a false negative.
+
+###### 2. Confusion Matrix
+
+Below is the confusion matrix for a predict vs true values
+
+![Confusion Matrix](images/Confusion_Matrix.jpg)
+
+We can calculate two rates from here:
+- Accuracy Rate = Correct prediction / Total
+- Error Rate = Wrong Prediction / Total
+
+Although this is not the preffered way of calculating the Accuracy rate due to Accuracy Paradox.
+
+###### 3. Cumulative Accuracy Profile (CAP) Curve
+
+Assume you have a customer list and you know that on inviting them for some offer, only 10% accept the invitation. So we plot that straight line on a graph for invitation sent at random. Now we can use a model's predicted values to plot a curve for when people with high probability of accepting are invited first. It will be noticed that we reach almost maximum invitation acceptance before we can send invitations to everyone. This is our CAP curve for that model.
+
+![CAP Curve](images/CAP_Curve.jpg)
+
+More the area between line and curve, better is that model.
+
+###### 4. CAP Analysis
+
+The Accuracy Rate for any model can be calculated by dividing the area for model curve by the area of perfect or ideal curve. Ideal curve is a one with 100% true prediction so if 10% people are accepting invitations we will get that at start of x axis.
+
+![CAP Analysis 1](images/CAP_AR_1.jpg)
+
+Although it is very hard to do statistically, so ve can just reflect x = 50% on y axis for our curve to get X and use followin values as refrence:
+
+![CAP Analysis 1](images/CAP_AR_2.jpg)
+
+> If:
+> - **X < 60%** Model is very bad, improve it.
+> - **60% < X < 70%** Model is still bad.
+> - **70% < X < 80%** It is a good model.
+> - **80% < X < 90%** It is a very good model.
+> - **90% < X < 100%** The model is unexceptionally good. Should probably check for any *overfitting* or *forward looking variables*.
 
 ###### Progress List
 

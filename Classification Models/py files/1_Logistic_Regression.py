@@ -1,6 +1,5 @@
-'''
-Logisitc Regression is appliesd to binary data / yes or no / 1 or 0
-'''
+#Logisitc Regression is appliesd to binary data / yes or no / 1 or 0
+
 
 # Importing the libraries
 

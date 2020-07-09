@@ -12,7 +12,7 @@ The data is from the [**UCI Machine Learning Repository**](https://archive.ics.u
 
 ## Understanding our Data
 
-- We do not need to concern ourself with the physics of the dataset, just understant the dependency.
+- We do not need to concern ourself with the physics of the dataset, just understand the dependency.
 - This dataset have no categorical data or missing values and have a little less than 10000 values.
 - We have a dataset of first four columns containing values for **Temperature, Vaccum, Pressure and Humidity**; these are our **independent variables**.
 - Then we have the fifth column containing values for the **Energy Output**, which is our **dependent variable**.
