@@ -11,6 +11,7 @@ This is a markdown file containing information about all models that we have bui
 | Data Preprocessing    | [Jump](#data-preprocessing)    |
 | Regression Models     | [Jump](#regression-models)     |
 | Classification Models | [Jump](#classification-models) |
+| Clustering Models     | [Jump](#clustering-models)     |
 
 ---
 
@@ -48,6 +49,7 @@ Standardization can be done to any data and makes all values between -3 and 3.
 - [x] ~Data Preprocessing~
 - [ ] Regression Models
 - [ ] Classification Models
+- [ ] Clustering Models
 
 [Go to top](#theory-knowledge-necesarry-for-data-science)
 
@@ -131,6 +133,7 @@ Here the increase in value of R-Squared due to increase in no. of variables is c
 - [x] ~Data Preprocessing~
 - [x] ~Regression Models~
 - [ ] Classification Models
+- [ ] Clustering Models
 
 [Go to top](#theory-knowledge-necesarry-for-data-science)
 
@@ -317,6 +320,39 @@ Although it is very hard to do statistically, so ve can just reflect x = 50% on 
 - [x] ~Data Preprocessing~
 - [x] ~Regression Models~
 - [x] ~Classification Models~
+- [ ] Clustering Models
+
+[Go to top](#theory-knowledge-necesarry-for-data-science)
+
+---
+
+### Clustering Models
+
+**Jump to a model :** [K Means Clustering](k-means-clustering), 
+
+#### K Means Clustering
+
+Here are the steps for K means clustering:  
+**STEP 1:** Choose the number K of clusters.  
+**STEP 2:** Select at random K points as centeroids for these clusters.  
+**STEP 3:** Assign each datapoint to the closest centeroid thus forming K number of clusters.  
+**STEP 4:** Compute and place the new centeroid of each cluster.  
+**STEP 5:** Reassign each datapoint to the new centroids. If its the same cluster move on else repeat step 4.
+
+Since we are choosing the centroids at the beginning randomly, sometimes it can give us the less obvious clusters. To tackle this we use K means ++ algorithm.
+
+##### Choosing K
+
+We calculate the WCSS(Within Cluster Sum of Squares) by summing the squares of distance of each point from its centroid. The value of K at which the change is not too big is choosen. For example in the figure given below k = 5.
+
+![Choosing K](images/K_Means.png)
+
+###### Progress List
+
+- [x] ~Data Preprocessing~
+- [x] ~Regression Models~
+- [x] ~Classification Models~
+- [x] Clustering Models
 
 [Go to top](#theory-knowledge-necesarry-for-data-science)
 

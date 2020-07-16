@@ -44,6 +44,7 @@ Both .py and .ipynb files are added
 >	- metrics
 >	- neighbors
 >	- naive_bayes
+>	- cluster
 
 ##### Classes
 
@@ -81,6 +82,8 @@ Both .py and .ipynb files are added
 >		- KNeighborsClassifier(n_neighbors, metric, p)
 >	- naive_bayes
 >		- GaussianNB()
+>	- cluster
+>		- KMeans(n_clusters, init, random_state)
 
 ##### Functions / Methods
 
@@ -138,3 +141,6 @@ Both .py and .ipynb files are added
 >		- .
 >			- confusion_matrix
 >			- accuracy_score
+>	- cluster
+>		- .
+>			- fit_predict
